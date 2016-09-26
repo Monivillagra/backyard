@@ -1,15 +1,19 @@
 /*Codigo css*/
+/*header*/
 .back {
     background-color: rgba(0, 188, 212, 0.06);
-    padding: 3% 0%;
-    height: 0;
+    background-size: 100%;
 }
 
 .logo2 {
     padding: 0% 10%;
     height: 30px;	
 }
-
+ul li {
+    list-style: none;
+    display: table-cell;
+    font-family: 'Open Sans', sans-serif;
+}
 ul {
     padding: 0% 10%;
     float: right;
@@ -17,44 +21,33 @@ ul {
     font-size: 12px;
     word-spacing: 10px;
 }
-
+div a {
+    text-decoration: none;
+    color: #090ed0;
+    margin: 0% 10%;
+}
+/*section*/
 .back2 {
     background-color: rgb(19, 19, 136);
     width: 100%;
-    height: 300px;
-    margin: -1% 0%;
+    background-size: 100%;
+    padding: 1% 0% 30% 0%;
 }
-
+.parrafo {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    margin: 0% 10%;
+    width: 32%;
+}
 h1 {
     font-family: 'Open Sans', sans-serif;
     margin: 1% 10%;
     color: white;
     font-size: 40px;
     width: 35%;
+    text-align: left;
 }
-
-ul li {
-	list-style: none;
-    display: table-cell;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.parrafo {
-    font-family: 'Open Sans Condensed', sans-serif;
-	color: white;
-    margin: 0% 10%;
-    width: 30%;
-}
-
 /*formulario*/
-.nom {
-    font-family: 'Open Sans', sans-serif; 
-    color: #ffffff;
-    font-size: 15px;
-    border-radius: 3px;
-    background-color: rgba(245, 245, 245, 0);
-}
-
 .formulario {
     background-color: rgba(43, 226, 63, 0.26);
     margin: -17% 60%;
@@ -62,19 +55,23 @@ ul li {
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
 }
-
+.tform {
+    color: white;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-bottom: 10%;
+}
+.nom {
+    font-family: 'Open Sans', sans-serif; 
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 3px;
+    background-color: rgba(245, 245, 245, 0);
+}
 form {
     padding: 5% 10%;
     width: 100%;
 }
-
-.tform {
-    color: white;
-    margin: 0;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
 input {
     width: 80%;
     margin-bottom: 5px;
@@ -82,66 +79,79 @@ input {
     font-size: 17px;
     border: 1px solid rgb(158, 158, 158);
 }
-
 #botonf {
     background: #00BCD4;
     color: white;
     padding: 2% 3%;
     border-radius: 3px;
 }
-/*formulario*/
-
+/*foot*/
 .back3 {
     background-color: rgba(0, 188, 212, 0.06);
-    height: 280px;
+    background-size: 100%;
+    padding-top: 1%;
+    padding-bottom: 15%;
 }
-
 .pfoot {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 12px;
-}  
-
-div a {
-    text-decoration: none;
-    color: #090ed0;
-    margin: 0% 10%;
-}
+    margin-left: 10%;
+} 
 
 /*Codigo media query*/
-
 @media (min-width: 535px) and (max-width: 824px){
-    body {
-        width: 90%;
-        background-color: rgb(19, 19, 136);
+    .back, .back3 {
+        width: 100%;
+        background-image: url(../image/burbujas.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
-    .col-5 {
-        margin: 0 auto;
-        padding: 0 auto;
-        text-align: center;
+    li a {
+        color: black;
+        font-weight: bold;
     }
     .col-6 {
         margin: 0 auto;
         padding: 0 auto;
         text-align: center;
     }
+
     h1 {
         margin: 0 auto;
-        text-align: center;
-        width: 90%;
+        text-align: left;
+        width: 80%;
     }
-    p {
+    .back2 {
+        padding: 0 auto;
+    }
+    .col-5 {
         margin: 0 auto;
+        padding: 0 auto;
         text-align: center;
-        width: 90%;
+    }
+    .parrafo {
+        width: 80%;
+        text-align: left;
     }
     .col-2 {
         width: 80%;
         margin: 0 auto;
         text-align: left;
     }
-    footer {
-        margin: 0 auto;
-        padding: 0 auto;
+    .col-2, .formulario {
+    margin: 10% 0% -10% 10%;
+    }
+    form, h2, .tform {
         text-align: center;
+    }
+    form {
+        width: 80%;
+    }
+    input {
+        width: 100%;
+    }
+    .pfoot {
+        color: black;
+        font-weight: bold;
     }
 }
